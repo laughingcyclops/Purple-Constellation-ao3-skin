@@ -1,3 +1,12 @@
+/* Use Skin Wizard to set 
+Font:
+    'Lucida Grande', 'Candara', 'Century Gothic', 'Book Antiqua', 'Lucida Bright', 'GNU Unifont' 
+Percent of browser font size:
+    120% 
+Work margin width:
+    140% 
+*/
+
 #header {
   background-image: url("https://64.media.tumblr.com/6cbf93915c169f2d9271cbedb28d1614/4b9061cf8de68fe9-83/s1280x1920/32ed70d183e2cb04d9c0b365a6b62f021e5bb669.jpg");
   background-repeat: no-repeat;

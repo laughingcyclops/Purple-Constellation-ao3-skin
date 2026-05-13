@@ -23,12 +23,14 @@
 #header .heading a {
   color: #1D1526;
   text-shadow: 0px 0px 8px #C49554;
+  font-family: Lucida Bright;
 }
 
 .event .userstuff {
   background: #50425E;
   border: 1px solid #C49554;
   border-radius: 7.5px;
+  padding: 0.05em 0.05em 0.05em 0.05em;
 }
 
 #outer.wrapper {
@@ -68,6 +70,7 @@ span.submit.actions input.button {
   color: #C49554 !important;
   border: 1px solid #140D1F;
   border-radius: 7.5px;
+  padding: 0.05em 0.05em 0.05em 0.05em;
 }
 
 form.search input[type=text],
@@ -77,6 +80,7 @@ form.search input[type=submit],
   border: none;
   box-shadow: 0px 0px 8px #C49554;
   color: #C49554;
+  padding: 0.05em 0.05em 0.05em 0.05em;
   display: block;
 }
 
@@ -167,6 +171,7 @@ ul.navigation.actions li a,
   border: 1px solid #C49554;
   color: #C49554;
   box-shadow: 0px 0px 8px #C49554;
+  padding: 0.05em 0.05em 0.05em 0.05em;
   border-radius: 7.5px;
 }
 
@@ -197,6 +202,7 @@ dl.meta {
   border: 1px solid #C49554;
   border-radius: 7.5px;
   box-shadow: 0px 0px 8px #C49554;
+  padding: 0.05em 0.05em 0.05em 0.05em;
 }
 
 .listbox .index {
@@ -224,7 +230,7 @@ span.symbol.question,
 .own {
   background: #140D1F !important;
   color: #C49554 !important;
-  padding: 2px;
+  padding: 0.05em 0.05em 0.05em 0.05em;
   border: 1px solid #C49554;
   border-radius: 7.5px;
   box-shadow: 0px 0px 8px #C49554;
@@ -254,6 +260,7 @@ div.dynamic {
   border: 1px solid #C49554;
   border-radius: 7.5px;
   padding: 5px;
+  margin: 0.05em 0.05em 0.05em 0.05em;
 }
 
 .dropdown {
@@ -271,27 +278,24 @@ li.blurb {
   border: 1px solid #C49554;
   border-radius: 7.5px;
   box-shadow: 0px 0px 8px #C49554;
-  padding: 5px;
-}
-
-.draft {
-  background: #140D1F;
-  color: #C49554;
-  border: 2px dashed #C49554;
-  border-radius: 7.5px;
-  box-shadow: 0px 0px 8px #C49554;
+  padding: 0.375em;
+  margin: 0.05em 0.05em 0.05em 0.05em;
 }
 
 .draft .wrapper {
   background: #140D1F;
   border: 1px solid #C49554;
   border-radius: 7.5px;
+  padding: 0.05em 0.05em 0.05em 0.05em;
+  margin: 0.05em 0.05em 0.05em 0.05em;
 }
 
 #header h2 {
   background: #C49554 !important;
   color: #140D1F;
   box-shadow: 0px 0px 8px #C49554;
+  padding: 0.05em 0.05em 0.05em 0.05em;
+  margin: 0.05em 0.05em 0.05em 0.05em;
 }
 
 #stat_chart svg rect:first-of-type {
@@ -309,6 +313,8 @@ li.blurb {
   background: #140D1F;
   border: 1px solid #C49554;
   border-radius: 7.5px;
+  padding: 0.05em 0.05em 0.05em 0.05em;
+  margin: 0.05em 0.05em 0.05em 0.05em;
 }
 
 .reading h4.viewed,
@@ -326,6 +332,8 @@ span.replied {
   border: 2px solid #C49554;
   border-radius: 7.5px;
   box-shadow: 0px 0px 8px #C49554;
+  padding: 0.05em 0.05em 0.05em 0.05em;
+  margin: 0.05em 0.05em 0.05em 0.05em;
 }
 
 h4.heading.byline {
@@ -336,6 +344,7 @@ h4.heading.byline {
 li.comment {
   border: 1px solid #C49554;
   border-radius: 7.5px;
+  margin: 0.05em 0.05em 0.05em 0.05em;
 }
 
 .comment div.icon {
@@ -351,6 +360,7 @@ li.comment {
   background: #140D1F;
   border: 5px dashed #C49554 !important;
   border-radius: 7.5px;
+  margin: 0.05em 0.05em 0.05em 0.05em;
 }
 
 span.unread {
@@ -368,9 +378,9 @@ dd.warning.tags a {
   border: 1px solid #C49554;
   border-radius: 7.5px;
   background: #C49554;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding: 0.05em 0.05em 0.05em 0.05em;
   box-shadow: 0px 0px 5px #C49554;
+  margin: 0.05em 0.05em 0.05em 0.05em;
 }
 
 .relationships .tag,
@@ -380,6 +390,42 @@ dd.relationship.tags a {
   color: #C49554 !important;
   font-weight: bold;
   text-shadow: 0px 0px 8px #C49554;
+  margin: 0.05em 0.05em 0.05em 0.05em;
+}
+
+form#work-filters dl,
+form#work-filters dd,
+form#work-filters dt,
+form#work-filters fieldset,
+form#work-filters .listbox,
+form#work-filters .expandable,
+form#work-filters .filter-toggle,
+form#work-filters .heading,
+form#work-filters h3,
+form#work-filters h4 {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+form#work-filters {
+  position: relative !important;
+  z-index: 1;
+  background-clip: padding-box !important;
+  margin-top: 1em !important;
+}
+
+form#work-filters::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border: 1px solid #C49554;
+  border-radius: 15px;
+  box-shadow: 0 0 5px #C49554;
+  z-index: 0;
 }
 
 .filters .expander {

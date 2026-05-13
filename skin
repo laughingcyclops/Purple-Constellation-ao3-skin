@@ -2,7 +2,7 @@
   background-image: url("https://64.media.tumblr.com/6cbf93915c169f2d9271cbedb28d1614/4b9061cf8de68fe9-83/s1280x1920/32ed70d183e2cb04d9c0b365a6b62f021e5bb669.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center; 
+  background-position: center center;
   background-color: #1D1526;
 }
 
@@ -28,6 +28,7 @@
 .event .userstuff {
   background: #50425E;
   border: 1px solid #C49554;
+  border-radius: 7.5px;
 }
 
 #outer.wrapper {
@@ -66,6 +67,7 @@ span.submit.actions input.button {
   box-shadow: 0px 0px 8px #C49554;
   color: #C49554 !important;
   border: 1px solid #140D1F;
+  border-radius: 7.5px;
 }
 
 form.search input[type=text],
@@ -165,7 +167,7 @@ ul.navigation.actions li a,
   border: 1px solid #C49554;
   color: #C49554;
   box-shadow: 0px 0px 8px #C49554;
-  border-radius: 5px;
+  border-radius: 7.5px;
 }
 
 .current,
@@ -173,7 +175,7 @@ ul.navigation.actions li a,
   background: #C49554 !important;
   color: #140D1F !important;
   box-shadow: 0px 0px 8px #C49554 !important;
-  border-radius: 5px;
+  border-radius: 7.5px;
 }
 
 #dashboard.own {
@@ -193,6 +195,7 @@ ul.navigation.actions li a,
 
 dl.meta {
   border: 1px solid #C49554;
+  border-radius: 7.5px;
   box-shadow: 0px 0px 8px #C49554;
 }
 
@@ -221,7 +224,9 @@ span.symbol.question,
 .own {
   background: #140D1F !important;
   color: #C49554 !important;
+  padding: 2px;
   border: 1px solid #C49554;
+  border-radius: 7.5px;
   box-shadow: 0px 0px 8px #C49554;
 }
 
@@ -247,6 +252,8 @@ span.delete a {
 div.dynamic {
   background: #140D1F;
   border: 1px solid #C49554;
+  border-radius: 7.5px;
+  padding: 5px;
 }
 
 .dropdown {
@@ -262,19 +269,23 @@ form.verbose legend,
 
 li.blurb {
   border: 1px solid #C49554;
+  border-radius: 7.5px;
   box-shadow: 0px 0px 8px #C49554;
+  padding: 5px;
 }
 
 .draft {
   background: #140D1F;
   color: #C49554;
   border: 2px dashed #C49554;
+  border-radius: 7.5px;
   box-shadow: 0px 0px 8px #C49554;
 }
 
 .draft .wrapper {
   background: #140D1F;
   border: 1px solid #C49554;
+  border-radius: 7.5px;
 }
 
 #header h2 {
@@ -297,6 +308,7 @@ li.blurb {
 .statistics .index li:nth-of-type(2n) {
   background: #140D1F;
   border: 1px solid #C49554;
+  border-radius: 7.5px;
 }
 
 .reading h4.viewed,
@@ -312,6 +324,7 @@ span.replied {
   background: #140D1F;
   color: #C49554;
   border: 2px solid #C49554;
+  border-radius: 7.5px;
   box-shadow: 0px 0px 8px #C49554;
 }
 
@@ -322,6 +335,7 @@ h4.heading.byline {
 
 li.comment {
   border: 1px solid #C49554;
+  border-radius: 7.5px;
 }
 
 .comment div.icon {
@@ -336,6 +350,7 @@ li.comment {
 .unread {
   background: #140D1F;
   border: 5px dashed #C49554 !important;
+  border-radius: 7.5px;
 }
 
 span.unread {
@@ -351,7 +366,7 @@ span.indicator::before {
 .work .warning a.tag,
 dd.warning.tags a {
   border: 1px solid #C49554;
-  border-radius: 5px;
+  border-radius: 7.5px;
   background: #C49554;
   padding-left: 2px;
   padding-right: 2px;

@@ -477,3 +477,19 @@ form.search input[type=submit] {
   padding-right: 0.5em !important;
   max-width: 100% !important;
 }
+
+form#work-filters,
+form#work-filters .listbox,
+form#work-filters .dropdown,
+form#work-filters .expandable,
+form#work-filters .menu,
+form#work-filters .module {
+  position: relative !important;
+  z-index: 9999 !important;
+}
+
+form#work-filters,
+form#work-filters * {
+  position: relative !important;
+  z-index: 12000 !important;
+}

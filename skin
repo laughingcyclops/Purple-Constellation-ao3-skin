@@ -1,11 +1,16 @@
-/* Use Skin Wizard to set 
-Font:
-    'Lucida Grande', 'Candara', 'Century Gothic', 'Book Antiqua', 'Lucida Bright', 'GNU Unifont' 
-Percent of browser font size:
-    120% 
-Work margin width:
-    140% 
-*/
+Font: 'Lucida Grande',
+'Candara',
+'Century Gothic',
+'Book Antiqua',
+'Lucida Bright',
+'GNU Unifont' Percent of browser font size: 120% Work margin width: 140% CSS #header {
+  background-image: url("https://64.media.tumblr.com/6cbf93915c169f2d9271cbedb28d1614/4b9061cf8de68fe9-83/s1280x1920/32ed70d183e2cb04d9c0b365a6b62f021e5bb669.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #1D1526;
+}
+
 
 #header {
   background-image: url("https://64.media.tumblr.com/6cbf93915c169f2d9271cbedb28d1614/4b9061cf8de68fe9-83/s1280x1920/32ed70d183e2cb04d9c0b365a6b62f021e5bb669.jpg");
@@ -381,12 +386,18 @@ span.indicator::before {
   box-shadow: 0px 0px 8px #C49554;
 }
 
+a.tag:hover {
+  background-color: #0F0012;
+}
+
 .warnings .tag,
 .work .warning a.tag,
+warnings.tag:hover,
 dd.warning.tags a {
   border: 1px solid #C49554;
   border-radius: 7.5px;
   background: #C49554;
+  color: #140D1F !important;
   padding: 0.05em 0.05em 0.05em 0.05em;
   box-shadow: 0px 0px 5px #C49554;
   margin: 0.05em 0.05em 0.05em 0.05em;
@@ -402,6 +413,7 @@ dd.relationship.tags a {
   margin: 0.05em 0.05em 0.05em 0.05em;
 }
 
+ 
 form#work-filters dl,
 form#work-filters dd,
 form#work-filters dt,
@@ -421,16 +433,16 @@ form#work-filters {
   position: relative !important;
   z-index: 1;
   background-clip: padding-box !important;
-  margin-top: 1.2em !important;
+  margin-top: 1.05em !important;
 }
 
 form#work-filters::before {
   content: "";
   position: absolute;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
+  top: 0.05em;
+  right: 0.05em;
+  bottom: 0.05em;
+  left: 0.05em;
   border: 1px solid #C49554;
   border-radius: 15px;
   box-shadow: 0 0 5px #C49554;

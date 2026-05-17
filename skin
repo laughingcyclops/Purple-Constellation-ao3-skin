@@ -1,16 +1,4 @@
-Font: 'Lucida Grande',
-'Candara',
-'Century Gothic',
-'Book Antiqua',
-'Lucida Bright',
-'GNU Unifont' Percent of browser font size: 120% Work margin width: 140% CSS #header {
-  background-image: url("https://64.media.tumblr.com/6cbf93915c169f2d9271cbedb28d1614/4b9061cf8de68fe9-83/s1280x1920/32ed70d183e2cb04d9c0b365a6b62f021e5bb669.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-color: #1D1526;
-}
-
+/* HEADER */
 
 #header {
   background-image: url("https://64.media.tumblr.com/6cbf93915c169f2d9271cbedb28d1614/4b9061cf8de68fe9-83/s1280x1920/32ed70d183e2cb04d9c0b365a6b62f021e5bb669.jpg");
@@ -386,10 +374,6 @@ span.indicator::before {
   box-shadow: 0px 0px 8px #C49554;
 }
 
-a.tag:hover {
-  background-color: #0F0012;
-}
-
 .warnings .tag,
 .work .warning a.tag,
 warnings.tag:hover,
@@ -403,6 +387,10 @@ dd.warning.tags a {
   margin: 0.05em 0.05em 0.05em 0.05em;
 }
 
+a.tag:hover {
+  background-color: #0F0012;
+}
+
 .relationships .tag,
 .work .relationships a.tag,
 dd.relationship.tags a {
@@ -413,7 +401,8 @@ dd.relationship.tags a {
   margin: 0.05em 0.05em 0.05em 0.05em;
 }
 
- 
+/* SORT & FILTER */
+
 form#work-filters dl,
 form#work-filters dd,
 form#work-filters dt,
@@ -434,6 +423,9 @@ form#work-filters {
   z-index: 1;
   background-clip: padding-box !important;
   margin-top: 1.05em !important;
+  /* NEW: explicit background so the dark theme
+     shows when the filter panel opens on mobile */
+  background: #140D1F !important;
 }
 
 form#work-filters::before {
@@ -490,6 +482,11 @@ form.search input[type=submit] {
   max-width: 100% !important;
 }
 
+.filters,
+.works-search {
+  background: #140D1F !important;
+}
+
 form#work-filters,
 form#work-filters .listbox,
 form#work-filters .dropdown,
@@ -504,4 +501,25 @@ form#work-filters,
 form#work-filters * {
   position: relative !important;
   z-index: 12000 !important;
+}
+
+*,
+*::before,
+*::after {
+  border-radius: 7.5px !important;
+  background-clip: padding-box !important;
+}
+
+/* SIZE RESPONSIVE.*/
+
+@media (max-width: 768px) {
+  #header .heading {
+    height: 8em;
+  }
+}
+
+@media (max-width: 480px) {
+  #header .heading {
+    height: 5em;
+  }
 }

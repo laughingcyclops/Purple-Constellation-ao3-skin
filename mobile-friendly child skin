@@ -4,6 +4,35 @@
    works only with ≤600px CSS pixel width.
    only engage for mobile use. Will not work on desktop, you will have to switch to the parents skin for desktop. */
 
+/* FONT FAMILY */
+body,
+#main,
+#outer.wrapper,
+#header,
+#footer,
+#workskin,
+#workskin p,
+#workskin li,
+.userstuff {
+  font-family: 'Candara', 'Lucida Grande', 'Futura',
+    'Century Gothic', 'Optima', 'Didot',
+    serif;
+}
+
+
+/* FONT SIZE */
+
+html {
+  font-size: 100%;
+}
+
+/* WORK MARGIN WIDTH */
+
+#workskin {
+  max-width: 120% !important;
+  width: 100% !important;
+}
+
 @media (max-width: 600px) {
 
   /* FIXED SIDEBAR PANEL */

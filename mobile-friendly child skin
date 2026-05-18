@@ -1,0 +1,235 @@
+/* MOBILE-Friendly CHILD SKIN
+   Set the Parent skin to the desktop parent skin (using whatever name you have it set as)
+
+   works only with ≤600px CSS pixel width.
+   only engage for mobile use. Will not work on desktop, you will have to switch to the parents skin for desktop. */
+
+@media (max-width: 600px) {
+
+  /* FIXED SIDEBAR PANEL */
+  form#work-filters {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 85% !important;
+    max-width: 320px !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    background: #140D1F !important;
+    border-left: 2px solid #C49554 !important;
+    box-shadow: -4px 0 16px #C49554 !important;
+    z-index: 99999 !important;
+    padding: 1em 0.75em 3em 0.75em !important;
+    margin: 0 !important;
+  }
+
+  /* text and icons inside the panel */
+  form#work-filters,
+  form#work-filters * {
+    color: #C49554 !important;
+  }
+
+  /* expanded filter section exception: color fix */
+  form#work-filters .current,
+  form#work-filters .current *,
+  form#work-filters .expanded > dt,
+  form#work-filters .expanded > dt *,
+  form#work-filters .expanded > .heading,
+  form#work-filters .expanded > .heading *,
+  form#work-filters .expanded .expander,
+  form#work-filters .open .expander {
+    color: #140D1F !important;
+    background: #C49554 !important;
+  }
+
+  /* Structural elements */
+  form#work-filters dl,
+  form#work-filters dd,
+  form#work-filters dt,
+  form#work-filters fieldset,
+  form#work-filters .listbox,
+  form#work-filters .expandable,
+  form#work-filters .filter-toggle,
+  form#work-filters .heading,
+  form#work-filters h3,
+  form#work-filters h4 {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Inputs and selects */
+  form#work-filters input[type="text"],
+  form#work-filters input[type="search"],
+  form#work-filters select,
+  form#work-filters textarea {
+    background: #1D1526 !important;
+    color: #C49554 !important;
+    border: 1px solid #C49554 !important;
+    border-radius: 7.5px !important;
+    box-shadow: 0 0 4px #C49554 !important;
+    padding: 0.3em !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Submit / apply button */
+  form#work-filters input[type="submit"] {
+    background: #50425E !important;
+    color: #C49554 !important;
+    border: 1px solid #C49554 !important;
+    box-shadow: 0 0 6px #C49554 !important;
+    border-radius: 7.5px !important;
+    padding: 0.4em 0.75em !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin-top: 0.5em !important;
+  }
+
+  /* Labels */
+  form#work-filters label,
+  form#work-filters label.required {
+    background: transparent !important;
+    color: #C49554 !important;
+  }
+
+  /* Links inside the panel */
+  form#work-filters a,
+  form#work-filters a:link,
+  form#work-filters a:visited {
+    color: #87769B !important;
+    background: transparent !important;
+  }
+
+  /* Checkboxes and radio buttons */
+  form#work-filters input[type="checkbox"],
+  form#work-filters input[type="radio"] {
+    width: auto !important;
+    margin-right: 0.4em !important;
+  }
+
+  /* Warning tags inside filter keep gold bg */
+  form#work-filters .warning.tags a,
+  form#work-filters .warnings .tag {
+    background: #C49554 !important;
+    color: #140D1F !important;
+  }
+
+  /* Section headings: subtle gold divider */
+  form#work-filters h3,
+  form#work-filters h4 {
+    border-bottom: 1px solid #C49554 !important;
+    padding-bottom: 0.2em !important;
+    margin-bottom: 0.3em !important;
+    font-size: 1em !important;
+  }
+
+  /* FILTER TOGGLE BUTTON */
+
+  .filters .expander {
+    display: block !important;
+    background: #50425E !important;
+    background-image: none !important;
+    color: #C49554 !important;
+    border: 1px solid #C49554 !important;
+    box-shadow: 0 0 8px #C49554 !important;
+    border-radius: 7.5px !important;
+    padding: 0.5em 0.85em !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    font-weight: bold !important;
+    margin-bottom: 0.5em !important;
+  }
+
+  .filters .expanded .expander {
+    background: #C49554 !important;
+    background-image: none !important;
+    color: #140D1F !important;
+  }
+
+  /* FILTER CONTAINERS */
+
+  .filters,
+  .works-search {
+    background: transparent !important;
+  }
+
+  /* HEADER */
+
+  #header .heading {
+    height: 6em;
+  }
+
+  /* NAVIGATION & ACTIONS */
+
+  #header ul.navigation,
+  #header ul.navigation.actions {
+    flex-wrap: wrap;
+  }
+
+  .actions a,
+  .actions a:link,
+  .action:link,
+  ul.navigation.actions li a {
+    padding: 0.25em 0.4em !important;
+    font-size: 0.9em !important;
+  }
+
+  /* CONTENT */
+
+  #workskin,
+  #workskin .preface,
+  #workskin .group,
+  .work,
+  .work .preface {
+    padding-left: 0.6em !important;
+    padding-right: 0.6em !important;
+  }
+
+  li.blurb {
+    margin: 0.2em 0 !important;
+  }
+
+  a.tag,
+  .tag {
+    white-space: normal !important;
+    word-break: break-word !important;
+  }
+
+  li.comment,
+  .comment .userstuff {
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  #modal {
+    max-width: 96vw !important;
+    box-sizing: border-box !important;
+    word-break: break-word !important;
+  }
+
+  #stat_chart {
+    overflow-x: auto !important;
+  }
+
+}
+
+/* VERY SMALL SCREENS (≤400px) */
+
+@media (max-width: 400px) {
+
+  #header .heading {
+    height: 4em;
+  }
+
+  form#work-filters {
+    width: 92% !important;
+  }
+
+  .filters .expander {
+    padding: 0.65em 1em !important;
+    font-size: 1em !important;
+  }
+
+}
